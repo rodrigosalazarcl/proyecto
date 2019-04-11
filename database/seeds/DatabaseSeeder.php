@@ -102,14 +102,14 @@ class DatabaseSeeder extends Seeder
         
        $user = [
         'name' => 'rodrigo',
-        'email' => 'roars1991@outlook.com', 
+        'email' => 'admin@outlook.com', 
         'password' => Hash::make('admin123456789'),
         'slug' => 'rodrigo',
         'status' => 1,
         'gender' => 'h',
         'phone' => 123456789,
-        'first_name' => 'Rodrigo',
-        'last_name' =>'polanco',
+        'first_name' => 'luis',
+        'last_name' =>'parra',
 
     ];
 
