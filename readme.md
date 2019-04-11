@@ -7,34 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
 
-## License
+ Dentro de la carpeta raíz del proyecto:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-IMPORTAR PROYECTO
-
- dentro de la carpeta raíz del proyecto:
-
+<p>
 $ composer install
 
+</p>
 
 De esta forma se instalarán todas las dependencias necesarias para el proyecto que fueron definidas en el archivo composer.json durante el desarrollo.
 
+
 Archivo de configuración de Laravel
+
 
 Cada nuevo proyecto con Laravel, por defecto tiene un archivo .env con los datos de configuración necesarios para el mismo, cuando utilizamos un sistema de control de versiones como git, este archivo se excluye del repositorio por medidas de seguridad .
 
@@ -42,18 +28,24 @@ Para más información visita Configuración de Git en proyectos de Laravel
 
 Sin embargo  existe un archivo llamado .env.example que es un ejemplo de como crear un el archivo de configuración, podemos copiar este archivo desde la consola con:
 
+
  cp .env.example .env
 
 
 De esta forma ya tenemos el archivo de configuración de nuestro proyecto.
 
+
 Creando un nuevo API key
 Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única que se crea en el archivo .env al iniciar el proyecto. En caso de que el desarrollador no te haya proporcionado están información, puedes generar una nueva API key desde la consola usando:
 
- php artisan key:generate
+
+$ php artisan key:generate
+
+
 
 
 Base de datos y migraciones
+
 
 Por lo general las bases de datos en los proyectos de Laravel se crean haciendo uso de las migraciones.
 
@@ -66,9 +58,13 @@ DB_PASSWORD=
 
 
 
+
+
 Finalmente estarás habilitado para ejecutar la migración desde la consola usando artisan
 
 $ php artisan migrate 
+
+
 
 Para agregar los seeders que requieras ejecutar:
 
@@ -76,9 +72,13 @@ Para agregar los seeders que requieras ejecutar:
 php artisan migrate --seed
 
 
+
+
 Para ingresar a la web:
 
 127.0.0.1/localhost/login
+
+
 
 Credenciales:
 
