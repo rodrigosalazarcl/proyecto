@@ -40,7 +40,7 @@ class LoginsDataTable extends DataTable
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function query(Login $model)
-    {
+    {//leer datos
          return $model->newQuery()->select('users.name','user_id','user_agent', 'session_token', 'ip_address','login_at','logout_at')->join('users', 'users.id', '=', 'logins.user_id')->orderBy('login_at', 'desc');
     }
 
